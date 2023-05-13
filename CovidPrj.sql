@@ -61,7 +61,6 @@ Group by Location
 order by TotalDeathCount desc
 
 
-
 -- BREAKING THINGS DOWN BY CONTINENT
 
 -- Showing contintents with the highest death count per population
@@ -72,7 +71,6 @@ From CovidProject..CovidDeaths
 Where continent is not null 
 Group by continent
 order by TotalDeathCount desc
-
 
 
 -- GLOBAL NUMBERS
@@ -117,7 +115,6 @@ where dea.continent is not null
 )
 Select *, (RollingPeopleVaccinated/Population)*100
 From PopvsVac
-
 
 
 -- Using Temp Table to perform Calculation on Partition By in previous query
